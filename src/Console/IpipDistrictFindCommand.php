@@ -16,6 +16,6 @@ class IpipDistrictFindCommand extends Command
             $this->error("argument ip is empty");
         }
         $info = District::find($ip);
-        $this->info(json_encode($info));
+        $this->info(json_encode($info, JSON_UNESCAPED_UNICODE));
     }
 }
