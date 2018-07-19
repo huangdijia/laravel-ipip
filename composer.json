@@ -1,0 +1,35 @@
+{
+    "name": "huangdijia/laravel-ipip",
+    "description": "ipip for laravel",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "ipip"
+    ],
+    "homepage": "https://github.com/huangdijia/laravel-ipip",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "huangdijia",
+            "email": "huangdijia@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "~5.5",
+        "ipip/datx": "~0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Huangdijia\\Ipip\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Huangdijia\\Ipip\\IpipServiceProvider"
+            ]
+        }
+    }
+}
