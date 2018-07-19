@@ -17,7 +17,7 @@ class IpipDownloadCommand extends Command
 
     public function handle()
     {
-        $this->cookiejar = storage_path('ipip.cookie');
+        $this->cookiejar = storage_path('app/public/ipip.cookie');
         $zip_file        = storage_path('app/public/17monipdb.zip');
         $datx_file       = storage_path('app/public/17monipdb/17monipdb.datx');
 
