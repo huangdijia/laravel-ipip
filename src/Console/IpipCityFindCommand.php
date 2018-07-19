@@ -3,7 +3,7 @@
 namespace Huangdijia\Ipip\Console;
 
 use Illuminate\Console\Command;
-use Huangdijia\Ipip\Facaes\City;
+use Huangdijia\Ipip\Facades\City;
 
 class IpipCityFindCommand extends Command
 {

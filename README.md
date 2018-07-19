@@ -29,3 +29,28 @@ php artisan vendor:publish --provider="Huangdijia\Ipip\IpipServiceProvider"
         'basestation' => 'path/station_ip.datx',
     ]
 ~~~
+
+# Usage
+
+## As Facade
+
+~~~php
+use Huangdijia\Ipip\Facades\BaseStation;
+use Huangdijia\Ipip\Facades\City;
+use Huangdijia\Ipip\Facades\District;
+
+...
+
+BaseStation::find('66.249.69.48');
+City::find('66.249.69.48');
+District::find('66.249.69.48');
+
+~~~
+
+## As Command
+
+~~~bash
+php artisan ipip:basestation '66.249.69.48'
+php artisan ipip:city '66.249.69.48'
+php artisan ipip:district '66.249.69.48'
+~~~
