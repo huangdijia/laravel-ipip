@@ -57,8 +57,8 @@ php artisan ipip:district '66.249.69.48'
 
 # Other
 
-https://www.ipip.net
-https://github.com/ipipdotnet/datx-php
+> * https://www.ipip.net
+> * https://github.com/ipipdotnet/datx-php
 
 # License
 
