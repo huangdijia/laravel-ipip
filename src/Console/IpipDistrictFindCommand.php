@@ -3,7 +3,7 @@
 namespace Huangdijia\Ipip\Console;
 
 use Illuminate\Console\Command;
-use Huangdijia\Ipip\Facaes\District;
+use Huangdijia\Ipip\Facades\District;
 
 class IpipDistrictFindCommand extends Command
 {

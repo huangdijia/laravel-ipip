@@ -3,7 +3,7 @@
 namespace Huangdijia\Ipip\Console;
 
 use Illuminate\Console\Command;
-use Huangdijia\Ipip\Facaes\BaseStation;
+use Huangdijia\Ipip\Facades\BaseStation;
 
 class IpipBaseStationFindCommand extends Command
 {
