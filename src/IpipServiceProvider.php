@@ -7,7 +7,7 @@ use ipip\datx\City;
 use ipip\datx\District;
 use ipip\datx\BaseStation;
 
-class SsdbServiceProvider extends ServiceProvider
+class IpipServiceProvider extends ServiceProvider
 {
     protected $defer = true;
     protected $commands = [
