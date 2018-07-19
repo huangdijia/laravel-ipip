@@ -37,6 +37,7 @@ class IpipServiceProvider extends ServiceProvider
             $path = config('ipip.datx.basestation');
             return new BaseStation($path);
         });
+        $this->commands($this->commands);
     }
 
     public function provides()
