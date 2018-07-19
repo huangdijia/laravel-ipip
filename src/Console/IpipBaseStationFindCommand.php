@@ -16,6 +16,6 @@ class IpipBaseStationFindCommand extends Command
             $this->error("argument ip is empty");
         }
         $info = BaseStation::find($ip);
-        $this->info(json_encode($ip));
+        $this->info(json_encode($info));
     }
 }
