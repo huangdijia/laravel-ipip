@@ -1,7 +1,7 @@
 <?php
 return [
     'datx' => [
-        'city'        => storage_path('17monipdb/17monipdb.datx'),
+        'city'        => storage_path('app/public/17monipdb/17monipdb.datx'),
         'district'    => '',
         'basestation' => '',
     ],
