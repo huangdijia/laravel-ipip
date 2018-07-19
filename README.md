@@ -13,6 +13,12 @@ First, install laravel 5.5, and make sure that the database connection settings 
 composer require huangdijia/laravel-ipip
 ~~~
 
+Then run these commands to publish assets and config：
+
+~~~bash
+php artisan vendor:publish --provider="Huangdijia\Ipip\IpipServiceProvider"
+~~~
+
 # Configurations
 
 ~~~php
