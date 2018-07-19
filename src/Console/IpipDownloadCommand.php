@@ -33,7 +33,7 @@ class IpipDownloadCommand extends Command
         }
 
         // report
-        $this->info('Download success! path:' . stroage_path('app/public'));
+        $this->info('Download success! path:' . storage_path('app/public/17monipdb/17monipdb.datx'));
     }
 
     private function login($mail = '', $pass = '')
