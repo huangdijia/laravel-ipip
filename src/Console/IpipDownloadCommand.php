@@ -16,8 +16,8 @@ class IpipDownloadCommand extends Command
 
     public function handle()
     {
-        $this->cookiejar = stroage_path('ipip.cookie');
-        $savepath        = stroage_path('app/public/17monipdb.zip');
+        $this->cookiejar = storage_path('ipip.cookie');
+        $savepath        = storage_path('app/public/17monipdb.zip');
 
         // login ipip
         $this->login(
@@ -29,7 +29,7 @@ class IpipDownloadCommand extends Command
         // unzip
         $zip = new ZipArchive;
         if ($zip->open($savepath)) {
-            $zip->extractTo(stroage_path('app/public'));
+            $zip->extractTo(storage_path('app/public'));
         }
 
         // report
