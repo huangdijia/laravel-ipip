@@ -54,3 +54,12 @@ php artisan ipip:basestation '66.249.69.48'
 php artisan ipip:city '66.249.69.48'
 php artisan ipip:district '66.249.69.48'
 ~~~
+
+# Other
+
+https://www.ipip.net
+https://github.com/ipipdotnet/datx-php
+
+# License
+
+laravel-ipip is licensed under The MIT License (MIT).
