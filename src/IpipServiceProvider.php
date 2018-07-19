@@ -14,6 +14,7 @@ class IpipServiceProvider extends ServiceProvider
         'Huangdijia\\Ipip\\Console\\IpipCityFindCommand',
         'Huangdijia\\Ipip\\Console\\IpipDistrictFindCommand',
         'Huangdijia\\Ipip\\Console\\IpipBaseStationFindCommand',
+        'Huangdijia\\Ipip\\Console\\IpipDownloadCommand',
     ];
 
     public function boot()

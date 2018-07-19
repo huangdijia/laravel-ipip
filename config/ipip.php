@@ -1,8 +1,12 @@
 <?php
 return [
     'datx' => [
-        'city'        => '',
+        'city'        => storage_path('17monipdb/17monipdb.datx'),
         'district'    => '',
         'basestation' => '',
+    ],
+    'auth' => [
+        'mail' => '',
+        'pass' => '',
     ]
 ];
