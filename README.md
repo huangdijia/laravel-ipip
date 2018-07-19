@@ -27,6 +27,10 @@ php artisan vendor:publish --provider="Huangdijia\Ipip\IpipServiceProvider"
         'city'        => 'path/mydata4vipday4.datx',
         'district'    => 'path/quxian.datx',
         'basestation' => 'path/station_ip.datx',
+    ],
+    'auth' => [
+        'mail' => '', // mail of ipip.net
+        'pass' => '', // password of ipip.net
     ]
 ~~~
 
@@ -50,9 +54,10 @@ District::find('66.249.69.48');
 ## As Command
 
 ~~~bash
-php artisan ipip:basestation '66.249.69.48'
-php artisan ipip:city '66.249.69.48'
-php artisan ipip:district '66.249.69.48'
+php artisan ipip:basestation 'ip'
+php artisan ipip:city 'ip'
+php artisan ipip:district 'ip'
+php artisan ipip:download # must set mail and pass at config/ipip.php
 ~~~
 
 # Other
