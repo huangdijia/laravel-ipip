@@ -19,7 +19,7 @@ class IpipServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
-            $this->publishes([__DIR__.'/../config' => config_path()], 'ipip-config');
+            $this->publishes([__DIR__.'/../config/ipip.php' => config_path('ipip.php')]);
         }
     }
 
