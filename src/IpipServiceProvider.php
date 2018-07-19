@@ -9,6 +9,7 @@ use ipip\datx\BaseStation;
 
 class SsdbServiceProvider extends ServiceProvider
 {
+    protected $defer = true;
     protected $commands = [
         'Huangdijia\\Ipip\\Console\\IpipCityFindCommand',
         'Huangdijia\\Ipip\\Console\\IpipDistrictFindCommand',
@@ -22,11 +23,6 @@ class SsdbServiceProvider extends ServiceProvider
         }
     }
 
-    /**
-     * 注册服务提供者
-     *
-     * @return void
-     */
     public function register()
     {
         $this->app->singleton('ipip.city', function () {
@@ -41,5 +37,14 @@ class SsdbServiceProvider extends ServiceProvider
             $path = config('ipip.datx.basestation');
             return new BaseStation($path);
         });
+    }
+
+    public function provides()
+    {
+        return [
+            'ipip.city',
+            'ipip.district',
+            'ipip.basestation'
+        ];
     }
 }
