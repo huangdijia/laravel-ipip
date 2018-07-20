@@ -45,7 +45,7 @@ use Huangdijia\Ipip\Facades\District;
 
 ...
 
-BaseStation::find('66.249.69.48');
+BaseStation::find('66.249.69.48'); // ['美国', '美国', '', '']
 City::find('66.249.69.48');
 District::find('66.249.69.48');
 
@@ -54,10 +54,27 @@ District::find('66.249.69.48');
 ## As Command
 
 ~~~bash
-php artisan ipip:basestation 'ip'
-php artisan ipip:city 'ip'
-php artisan ipip:district 'ip'
+php artisan ipip:basestation '66.249.69.48' # ['美国', '美国', '', '']
+php artisan ipip:city '66.249.69.48'
+php artisan ipip:district '66.249.69.48'
 php artisan ipip:download # must set mail and pass at config/ipip.php
+~~~
+
+## As Helper
+
+~~~php
+ipip('city')->find('66.249.69.48'); // ['美国', '美国', '', '']
+ipip_city()->find('66.249.69.48'); // ['美国', '美国', '', '']
+ipip_city('66.249.69.48'); // ['美国', '美国', '', '']
+
+ipip('basestation')->find('66.249.69.48');
+ipip_basestation()->find('66.249.69.48');
+ipip_basestation('66.249.69.48');
+
+ipip('distric')->find('66.249.69.48');
+ipip_distric()->find('66.249.69.48');
+ipip_distric('66.249.69.48');
+
 ~~~
 
 # Other
