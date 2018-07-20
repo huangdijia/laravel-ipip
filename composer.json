@@ -21,6 +21,9 @@
         "ipip/datx": "~0.2"
     },
     "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
         "psr-4": {
             "Huangdijia\\Ipip\\": "src/"
         }
