@@ -6,7 +6,7 @@ return [
         'basestation' => '',
     ],
     'auth' => [
-        'mail' => '',
-        'pass' => '',
+        'mail' => env('IPIP_MAIL', ''),
+        'pass' => env('IPIP_PASS', ''),
     ]
 ];
