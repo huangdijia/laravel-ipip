@@ -6,7 +6,7 @@ use Exception;
 use Illuminate\Console\Command;
 use ZipArchive;
 
-class IpipDownloadCommand extends Command
+class DownloadCommand extends Command
 {
     protected $signature   = 'ipip:download';
     protected $description = 'Download datx from ipip.net';

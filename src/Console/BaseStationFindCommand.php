@@ -3,19 +3,19 @@
 namespace Huangdijia\Ipip\Console;
 
 use Illuminate\Console\Command;
-use Huangdijia\Ipip\Facades\City;
+use Huangdijia\Ipip\Facades\BaseStation;
 
-class IpipCityFindCommand extends Command
+class BaseStationFindCommand extends Command
 {
-    protected $signature   = 'ipip:city {ip}';
-    protected $description = 'Find city info of ip by ipip';
+    protected $signature   = 'ipip:basestation {ip}';
+    protected $description = 'Find basestation info of ip by ipip';
     public function handle()
     {
         $ip   = $this->argument('ip');
         if (empty($ip)) {
             $this->error("argument ip is empty");
         }
-        $info = City::find($ip);
+        $info = BaseStation::find($ip);
         $this->info(json_encode($info, JSON_UNESCAPED_UNICODE));
     }
 }

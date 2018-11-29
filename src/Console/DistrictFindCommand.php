@@ -5,7 +5,7 @@ namespace Huangdijia\Ipip\Console;
 use Illuminate\Console\Command;
 use Huangdijia\Ipip\Facades\District;
 
-class IpipDistrictFindCommand extends Command
+class DistrictFindCommand extends Command
 {
     protected $signature   = 'ipip:district {ip}';
     protected $description = 'Find district info of ip by ipip';
