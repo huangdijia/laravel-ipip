@@ -1,11 +1,14 @@
 # laravel-ipip
 
-# Requirements
+[![Latest Stable Version](https://poser.pugx.org/huangdijia/laravel-ipip/version.png)](https://packagist.org/packages/huangdijia/laravel-ipip)
+[![Total Downloads](https://poser.pugx.org/huangdijia/laravel-ipip/d/total.png)](https://packagist.org/packages/huangdijia/laravel-ipip)
+
+## Requirements
 
 * PHP >= 7.0
 * Laravel >= 5.5
 
-# Installation
+## Installation
 
 First, install laravel 5.5, and make sure that the database connection settings are correct.
 
@@ -19,7 +22,7 @@ Then run these commands to publish config
 php artisan vendor:publish --provider="Huangdijia\Ipip\IpipServiceProvider"
 ~~~
 
-# Configurations
+## Configurations
 
 ~~~php
 // config/ipip.php
@@ -34,9 +37,9 @@ php artisan vendor:publish --provider="Huangdijia\Ipip\IpipServiceProvider"
     ]
 ~~~
 
-# Usage
+## Usage
 
-## As Facade
+### As Facade
 
 ~~~php
 use Huangdijia\Ipip\Facades\BaseStation;
@@ -51,7 +54,7 @@ District::find('66.249.69.48');
 
 ~~~
 
-## As Command
+### As Command
 
 ~~~bash
 php artisan ipip:basestation '66.249.69.48' # ['美国', '美国', '', '']
@@ -60,7 +63,7 @@ php artisan ipip:district '66.249.69.48'
 php artisan ipip:download # must set mail and pass at config/ipip.php
 ~~~
 
-## As Helper
+### As Helper
 
 ~~~php
 ipip('city')->find('66.249.69.48'); // ['美国', '美国', '', '']
@@ -77,11 +80,11 @@ ipip_distric('66.249.69.48');
 
 ~~~
 
-# Other
+## Other
 
 > * https://www.ipip.net
 > * https://github.com/ipipdotnet/datx-php
 
-# License
+## License
 
 laravel-ipip is licensed under The MIT License (MIT).
