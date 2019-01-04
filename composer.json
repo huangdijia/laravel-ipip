@@ -32,7 +32,12 @@
         "laravel": {
             "providers": [
                 "Huangdijia\\Ipip\\IpipServiceProvider"
-            ]
+            ],
+            "alias": {
+                "BaseStation": "Huangdijia\\Ipip\\Facades\\BaseStation",
+                "City": "Huangdijia\\Ipip\\Facades\\City",
+                "District": "Huangdijia\\Ipip\\Facades\\District"
+            }
         }
     }
 }
