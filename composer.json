@@ -33,7 +33,7 @@
             "providers": [
                 "Huangdijia\\Ipip\\IpipServiceProvider"
             ],
-            "alias": {
+            "aliases": {
                 "BaseStation": "Huangdijia\\Ipip\\Facades\\BaseStation",
                 "City": "Huangdijia\\Ipip\\Facades\\City",
                 "District": "Huangdijia\\Ipip\\Facades\\District"
